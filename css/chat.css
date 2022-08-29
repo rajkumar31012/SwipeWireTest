@@ -1,0 +1,220 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+html {
+  
+    box-sizing: border-box ;
+    --duration: 1s ;
+    --duration-text-wrap: 12s 1.5s cubic-bezier(0.82, 0.82, 1, 1.01) ;
+    --cubic-header: var(--duration) cubic-bezier(0.71, 0.21, 0.3, 0.95) ;
+    --cubic-slider : var(--duration) cubic-bezier(0.4, 0, 0.2, 1) ;
+    --cubic-play-list : .35s var(--duration) cubic-bezier(0, 0.85, 0.11, 1.64) ;
+    --cubic-slider-context : cubic-bezier(1, -0.01, 1, 1.01) ;  
+    
+}
+
+html *,
+html *::before,
+html *::after {
+
+    box-sizing: inherit ;
+    scrollbar-width: none ;
+  
+}
+
+
+.img {
+
+    width: 100% ;
+    flex-shrink: 0;
+    display: block ;
+    object-fit: cover ;
+
+}
+
+.list {
+    margin: 0 ;
+    padding: 0 ;
+    list-style-type: none ;
+
+}
+
+.flex {
+
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+
+}
+
+.uppercase{
+  
+    text-transform: uppercase ;
+  
+}
+
+.chat {
+
+
+    display: flex ;
+    overflow: hidden ;
+    font-size: 1.22em ;
+    border-radius: 1.35em ;
+    flex-direction: column ;
+    background-color: white ;
+    height: var(--parent-height) ;
+
+}
+
+.profile__img {
+
+    width: 3.22em ;
+    height: 3.22em ;
+    border-radius: 1.7em ;
+
+}
+.text-wrap {
+
+    display: block ;
+    white-space: pre ;
+    width: fit-content ;
+    animation: text-wrap var(--duration-text-wrap) infinite ;
+
+}
+
+.chatlist_context {
+    margin: 0 ;
+    width: 100% ;
+    display: flex ;
+    line-height: 1.8 ;
+    flex-direction: column ;
+    justify-content: center ;
+    text-transform: capitalize ;
+
+}
+.player__title {
+    font-size: .8em ;
+    font-weight: 200 ;
+    color: #00000086 ;
+}
+
+.player__title_bold {
+    font-size: .8em ;
+    font-weight: bold ;
+    color: #00000086 ;
+}
+
+.chat_list {
+    height: 100% ;
+    overflow: auto ;   
+    padding: 0.4em .9em 0 1.2em
+}
+.chat_list::-webkit-scrollbar {
+    width: 0 ;
+}
+.chat_list_cont {
+/*     gap: 0 .65em ; */
+    display: flex ;
+    cursor: pointer ;
+    margin-bottom: .5em ;
+    padding-bottom: .7em ;
+    border-bottom: .1em solid #d8d8d859 ;
+}
+.chat_list_cont .chatlist_context {
+    line-height: 1.5 ;
+    margin-left: .65em ;
+}
+.contact_name {
+	font-size: 0.9em;
+    font-weight: 400;
+}
+.msg_time {
+    font-size:0.8125em;
+    color: #00000079 ; 
+    height: fit-content ;
+    align-self: flex-end ;
+}
+form.example
+{
+border-bottom:0.1em solid #d8d8d859;
+}
+
+form.example input[type=text] {
+  padding: 4px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 70%;
+  background: #fff;
+}
+form.example .input {
+  padding: 4px 40px !important;;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: #fff;
+  font-weight:600;
+}
+form.example .button {
+  float: left;
+  width: 10%;
+  padding: 5px;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+    background: #fff;
+}
+form.example .button1 {
+  float: right;
+  width: 10%;
+  padding: 5px;
+
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+    background: #fff;
+}
+form.example .button2 {
+  float: right;
+  width: 7%;
+  padding: 1px;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+    background: #fff;
+}
+form.example .button3 {
+  float: right;
+  width: 7%;
+  padding: 1px;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+    background: #fff;
+}
+button >  i{
+	color:#00000086;
+}
+
+form.example button:hover {
+  background: #fff;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.random-user__bio1 {
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    /* left: -15px; */
+    font-size: 11px;
+    font-size: .79rem;
+}
